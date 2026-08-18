@@ -1,5 +1,14 @@
-buildscript {
-    repositories { google(); mavenCentral() }
-    dependencies { classpath 'com.android.tools.build:gradle:4.0.0' }
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.hacker.tool"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
 }
-allprojects { repositories { google(); mavenCentral() } }
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+}
